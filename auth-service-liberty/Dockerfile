@@ -18,7 +18,7 @@ FROM acmeair/liberty
 RUN cd /opt/ibm/wlp/usr/servers/defaultServer &&\
   mkdir -p apps/auth-service.war &&\
   cd apps/auth-service.war &&\
-  wget -qO app.war https://acmeair.ci.cloudbees.com/job/acmeair-netflix-astyanax/lastSuccessfulBuild/artifact/acmeair-auth-service-tc7/build/libs/acmeair-auth-service-tc7-0.1.0-SNAPSHOT.war &&\
+  wget -qO app.war http://docs.rfc822.net/acmeair/acmeair-auth-service-tc7-0.1.0-SNAPSHOT.war &&\
   jar xf app.war &&\
   rm app.war
 

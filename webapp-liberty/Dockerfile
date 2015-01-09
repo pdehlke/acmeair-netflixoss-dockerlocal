@@ -18,7 +18,7 @@ FROM acmeair/liberty
 RUN cd /opt/ibm/wlp/usr/servers/defaultServer &&\
   mkdir -p apps/webapp.war &&\
   cd apps/webapp.war &&\
-  wget -qO app.war https://acmeair.ci.cloudbees.com/job/acmeair-netflix-astyanax/lastSuccessfulBuild/artifact/acmeair-webapp-tc7/build/libs/acmeair-webapp-tc7-0.1.0-SNAPSHOT.war &&\
+  wget -qO app.war http://docs.rfc822.net/acmeair/acmeair-webapp-tc7-0.1.0-SNAPSHOT.war &&\
   jar xf app.war &&\
   rm app.war
 
